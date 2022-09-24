@@ -1,0 +1,141 @@
+@import "index";
+@import "poet";
+@font-face {
+  font-family: 'Boncegro';
+  src: url(../fonts/Boncegro-FF-4F.otf);
+}
+@font-face {
+  font-family: 'Leto-Text-Sans-Defect';
+  src: url(../fonts/Leto-Text-Sans-Defect.otf);
+}
+body{
+  background-color: #f2f2f2;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: Boncegro, serif;
+}
+p{
+  font-family: Leto-Text-Sans-Defect, serif;
+}
+small{
+  font-family: -apple-system, serif;
+}
+
+/*
+ * Header
+ */
+.poems-header {
+  line-height: 1;
+  border-bottom: 1px solid #e5e5e5;
+  .poems-header-logo{
+    font-size: 2.5rem;
+    text-decoration: none;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  .btn{
+    &:active{
+      border-color: transparent;
+    }
+  }
+}
+
+.display-4 {
+  font-size: 2.5rem;
+  @media (min-width: 768px) {
+      font-size: 3rem;
+  }
+}
+
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller {
+  .nav{
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+  .nav-link {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: .875rem;
+  }
+}
+
+.flex-auto {
+  flex: 0 0 auto;
+}
+
+.form-control{
+  &:focus{
+    box-shadow: none;
+  }
+  &:first-child:hover{
+    box-shadow: none;
+  }
+}
+
+.input-group-send{
+  display: flex;
+  align-items: center;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 0.375rem;
+}
+
+.underline{
+  text-decoration: underline;
+}
+.no-underline{
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+}
+.no-color{
+  color: unset;
+  &:hover{
+    color: unset;
+  }
+}
+
+.list-group-item{
+  background-color: unset;
+}
+
+.h-250 { height: 250px; }
+@media (min-width: 768px) {
+  .h-md-250 { height: 250px; }
+}
+
+/*
+ * Footer
+ */
+.blog-footer {
+  padding: 2.5rem 0;
+  color: #727272;
+  background-color: #f9f9f9;
+  border-top: .05rem solid #e5e5e5;
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
