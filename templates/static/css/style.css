@@ -1,0 +1,210 @@
+.main-container .author-img {
+  width: 100%;
+  height: 100%;
+  min-height: 160px;
+}
+@media (max-width: 991px) {
+  .main-container .author-img {
+    min-height: 220px;
+  }
+}
+.main-container .author-img .a-img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 991px) {
+  .main-container .author-img .a-img {
+    background-size: contain;
+  }
+}
+.main-container .author-date {
+  font-family: cursive;
+  font-size: 0.75em;
+}
+.main-container .author-detail-page-url {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.left-poet-container .author-img {
+  width: 100%;
+  height: 100%;
+  min-height: 160px;
+}
+@media (max-width: 991px) {
+  .left-poet-container .author-img {
+    min-height: 220px;
+  }
+}
+.left-poet-container .author-img .a-img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 150px;
+}
+@media (max-width: 991px) {
+  .left-poet-container .author-img .a-img {
+    background-size: contain;
+  }
+}
+.left-poet-container .author-date {
+  font-family: cursive;
+  font-size: 0.75em;
+}
+.left-poet-container .author-detail-page-url {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: "Boncegro";
+  src: url(../fonts/Boncegro-FF-4F.otf);
+}
+@font-face {
+  font-family: "Leto-Text-Sans-Defect";
+  src: url(../fonts/Leto-Text-Sans-Defect.otf);
+}
+body {
+  background-color: #f2f2f2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Boncegro, serif;
+}
+
+p {
+  font-family: Leto-Text-Sans-Defect, serif;
+}
+
+small {
+  font-family: -apple-system, serif;
+}
+
+/*
+ * Header
+ */
+.poems-header {
+  line-height: 1;
+  border-bottom: 1px solid #e5e5e5;
+}
+.poems-header .poems-header-logo {
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+.poems-header .poems-header-logo:hover {
+  text-decoration: none;
+}
+.poems-header .btn:active {
+  border-color: transparent;
+}
+
+.display-4 {
+  font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+  .display-4 {
+    font-size: 3rem;
+  }
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+.nav-scroller .nav-link {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.flex-auto {
+  flex: 0 0 auto;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+.form-control:first-child:hover {
+  box-shadow: none;
+}
+
+.input-group-send {
+  display: flex;
+  align-items: center;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 0.375rem;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+.no-underline:hover {
+  text-decoration: none;
+}
+
+.no-color {
+  color: unset;
+}
+.no-color:hover {
+  color: unset;
+}
+
+.list-group-item {
+  background-color: unset;
+}
+
+.h-250 {
+  height: 250px;
+}
+
+@media (min-width: 768px) {
+  .h-md-250 {
+    height: 250px;
+  }
+}
+/*
+ * Footer
+ */
+.blog-footer {
+  padding: 2.5rem 0;
+  color: #727272;
+  background-color: #f9f9f9;
+  border-top: 0.05rem solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
