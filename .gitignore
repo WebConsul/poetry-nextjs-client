@@ -46,3 +46,5 @@ next-env.d.ts
 
 # Local History for Visual Studio Code
 .history/
+
+.ready

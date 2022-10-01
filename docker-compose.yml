@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  frontend-node:
+    build:
+      context: docker/node
+    volumes:
+      - ./:/app
+    command: sh -c "until [ -f .ready ] ; do sleep 1 ; done && yarn run dev"
+    ports:
+      - "8081:3000"
+  frontend-node-cli:
+    build:
+      context: docker/node
+    volumes:
+      - ./:/app
