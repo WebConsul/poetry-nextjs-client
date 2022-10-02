@@ -5,7 +5,7 @@ import Footer from "./footer"
 
 export type LayoutType = { children: ReactNode }
 
-export default function Layout({children}: LayoutType) {
+export default function MainLayout({children}: LayoutType) {
     return (
         <>
             <Head>
