@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Основной темплейт</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/bootstrap/bootstrap.min.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<div class="container-fluid">
+    <header class="poems-header py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+            <div class="col-4 pt-1">
+                <a class="link-secondary no-underline" href="#">что-то</a>
+            </div>
+            <div class="col-4 text-center">
+                <a class="poems-header-logo d-none d-sm-block" href="/">
+                    <img src="/static/image/LearnPoems.png" alt="Logo">
+                </a>
+                <a class="poems-header-logo d-sm-none" href="/">
+                    LS
+                </a>
+            </div>
+            <div class="col-4 d-flex justify-content-end align-items-center">
+                <div class="dropdown">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        Русский
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">Deutsch</a></li>
+                        <li><a class="dropdown-item" href="#">Español</a></li>
+                        <li><a class="dropdown-item" href="#">Français</a></li>
+                        <li><a class="dropdown-item" href="#">Italiano</a></li>
+                        <li><a class="dropdown-item" href="#">Português</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-sm btn-outline-secondary" href="#">Вход</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="nav-scroller py-1 mb-2">
+                <nav class="nav d-flex justify-content-between">
+                    <a class="p-2 link-secondary" href="#">тут</a>
+                    <a class="p-2 link-secondary" href="#">может</a>
+                    <a class="p-2 link-secondary" href="#">быть</a>
+                    <a class="p-2 link-secondary" href="#">будут</a>
+                    <a class="p-2 link-secondary" href="#">какие-то</a>
+                    <a class="p-2 link-secondary" href="#">жанры</a>
+                    <a class="p-2 link-secondary" href="#">или</a>
+                    <a class="p-2 link-secondary" href="#">теги?</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--End header-->
+
+<main class="container">
+    <div class="row g-5 mb-4 mt-0">
+        <div class="col-lg-3">
+            <div class="position-sticky" style="top: 2rem;">
+                <div class="mb-3">
+                    <form class="input-group">
+                        <input type="text" class="form-control">
+                        <div class="input-group-send btn-success" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+                        </div>
+                    </form>
+                </div>
+                <div class="mb-3 bg-light rounded left-poet-container">
+                    <div class="card  position-relative" style="width: 100%;">
+                        <div class="author-img">
+                            <div class="a-img" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmd9qeMpj1OZmk5B28-AmtOCD-qF750Ef4dboBA7ekQwFpViw0C0tFlznqdA&s)"></div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">
+                                <a href="/poet/anna-akhmatova/" class="no-color">Анна Андреевна АХМАТОВА</a>
+                            </h5>
+                            <small class="author-date">26.07.1875-22.02.1939</small>
+                            <p class="card-text">А́нна Андре́евна Ахма́това — русская поэтесса Серебряного века, одна из наиболее значимых фигур русской литературы XX века. Была номинирована на Нобелевскую премию по литературе.</p>
+                            <p class="card-text"><small class="text-muted">Стихотворений: 9</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-9 main-container">
+            <div class="verse-block">
+                <div class="verse-name"><h1>Любовь</h1></div>
+                <div class="verse-string">То змейкой, свернувшись клубком,</div>
+                <div class="verse-string">У самого сердца колдует,</div>
+                <div class="verse-string">То целые дни голубком</div>
+                <div class="verse-string">На белом окошке воркует,</div>
+                <div class="verse-string"></div>
+                <div class="verse-string">То в инее ярком блеснёт,</div>
+                <div class="verse-string">Почудится в дрёме левкоя…</div>
+                <div class="verse-string">Но верно и тайно ведёт</div>
+                <div class="verse-string">От радости и от покоя.</div>
+                <div class="verse-string"></div>
+                <div class="verse-string">Умеет так сладко рыдать</div>
+                <div class="verse-string">В молитве тоскующей скрипки,</div>
+                <div class="verse-string">И страшно её угадать</div>
+                <div class="verse-string">В ещё незнакомой улыбке.</div>
+            </div>
+            <div class="verse-from"><a href="/books/vecher-1912/" class="no-color">Вечер (1912)</a></div>
+        </div>
+    </div>
+
+</main>
+
+<!--Start footer-->
+
+<footer class="blog-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 ">
+                <h4>About</h4>
+                <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+            </div>
+            <div class="col-md-4 mt-3 mt-md-0">
+                <h4>Полезные ссылки</h4>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="#" class="no-underline no-color">An item</a></li>
+                    <li class="list-group-item"><a href="#" class="no-underline no-color">A second item</a></li>
+                    <li class="list-group-item"><a href="#" class="no-underline no-color">A second item</a></li>
+                    <li class="list-group-item"><a href="#" class="no-underline no-color">A second item</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center text-md-start">
+                Учите стихи! ©2022
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="/static/jquery-3.6.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="/static/bootstrap/bootstrap.min.js"></script>
+<script src="/static/bootstrap/bootstrap.bundle.js"></script>
+<script src="/static/js/main.js"></script>
+</body>
+</html>
