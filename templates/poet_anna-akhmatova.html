@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/static/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/bootstrap/bootstrap.min.css">
     <!-- Style -->
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="./static/css/style.css">
 </head>
 <body>
 
@@ -19,10 +19,10 @@
                 <a class="link-secondary no-underline" href="#">что-то</a>
             </div>
             <div class="col-4 text-center">
-                <a class="poems-header-logo d-none d-sm-block" href="#">
-                    <img src="/static/image/LearnPoems.png" alt="Logo">
+                <a class="poems-header-logo d-none d-sm-block" href="/">
+                    <img src="./static/image/LearnPoems.png" alt="Logo">
                 </a>
-                <a class="poems-header-logo d-sm-none" href="#">
+                <a class="poems-header-logo d-sm-none" href="/">
                     LS
                 </a>
             </div>
@@ -64,22 +64,117 @@
     </div>
 </div>
 
-<!--End header-->
-
 <main class="container">
     <div class="row g-5 mb-4 mt-0">
-        <div class="col-lg-3">
-            LEFT CONTENT
+        <div class="col-sm-12 col-lg-3">
+            <div class="position-sticky" style="top: 2rem;">
+                <div class="mb-3">
+                    <form class="input-group">
+                        <input type="text" class="form-control">
+                        <div class="input-group-send btn-success" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+                        </div>
+                    </form>
+                </div>
+                <div class="mb-3 bg-light rounded left-poet-container">
+                    <div class="card  position-relative" style="width: 100%;">
+                        <div class="author-img">
+                            <div class="a-img" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmd9qeMpj1OZmk5B28-AmtOCD-qF750Ef4dboBA7ekQwFpViw0C0tFlznqdA&s)"></div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Анна Андреевна АХМАТОВА</h5>
+                            <small class="author-date">26.07.1875-22.02.1939</small>
+                            <p class="card-text">А́нна Андре́евна Ахма́това — русская поэтесса Серебряного века, одна из наиболее значимых фигур русской литературы XX века. Была номинирована на Нобелевскую премию по литературе.</p>
+                            <p class="card-text"><small class="text-muted">Стихотворений: 9</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="col-lg-9 main-container">
-            RIGHT CONTENT
+        <div class="col-sm-12 col-lg-9 main-container">
+            <div class="bd-example">
+                <nav>
+                    <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                        <button class="nav-link d-flex align-items-center no-color active" id="nav-poetry-tab" data-bs-toggle="tab" data-bs-target="#nav-poetry" type="button" role="tab" aria-controls="nav-poetry" aria-selected="true">
+                            Стихи
+                            <div class="count-block">
+                                <span class="number-unit bg-success">9</span>
+                            </div>
+                        </button>
+                        <button class="nav-link d-flex align-items-center no-color" id="nav-poetry-collections-tab" data-bs-toggle="tab" data-bs-target="#nav-poetry-collections" type="button" role="tab" aria-controls="nav-poetry-collections" aria-selected="false">
+                            Сборники стихов
+                            <div class="count-block">
+                                <span class="number-unit bg-success">12</span>
+                            </div>
+                        </button>
+                        <button class="nav-link d-flex align-items-center no-color" id="nav-about-the-poet-tab" data-bs-toggle="tab" data-bs-target="#nav-about-the-poet" type="button" role="tab" aria-controls="nav-about-the-poet" aria-selected="false">
+                            О поэте
+                        </button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade active show" id="nav-poetry" role="tabpanel" aria-labelledby="nav-poetry-tab">
+                        <ul class="list-group list-group-flush">
+                            <a href="lyubov/" class="no-color no-underline">
+                                <li class="list-group-item list-group-item-action">
+                                    Любовь
+                                </li>
+                            </a>
+                            <a href="lyubov/" class="no-color no-underline">
+                                <li class="list-group-item list-group-item-action">
+                                    A second item
+                                </li>
+                            </a>
+                            <a href="lyubov/" class="no-color no-underline">
+                                <li class="list-group-item list-group-item-action">
+                                    A fourth item
+                                </li>
+                            </a>
+                            <a href="lyubov/" class="no-color no-underline">
+                                <li class="list-group-item list-group-item-action">
+                                    A fourth item
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="nav-poetry-collections" role="tabpanel" aria-labelledby="nav-poetry-collections-tab">
+                        <ul class="list-group list-group-flush">
+                            <a href="/books/vecher-1912/" class="no-color no-underline">
+                                <li class="list-group-item list-group-item-action">
+                                    Вечер (1912)
+                                </li>
+                            </a>
+                            <a href="/books/vecher-1912/" class="no-color no-underline">
+                                <li class="list-group-item list-group-item-action">
+                                    A second item
+                                </li>
+                            </a>
+                            <a href="/books/vecher-1912/" class="no-color no-underline">
+                                <li class="list-group-item list-group-item-action">
+                                    A fourth item
+                                </li>
+                            </a>
+                            <a href="/books/vecher-1912/" class="no-color no-underline">
+                                <li class="list-group-item list-group-item-action">
+                                    A fourth item
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="nav-about-the-poet" role="tabpanel" aria-labelledby="nav-about-the-poet-tab">
+                        <h1>Ахматова, Анна Андреевна</h1>
+                        <p>А́нна Андре́евна Ахма́това (урождённая Го́ренко, по первому мужу Го́ренко-Гумилёва[11], после развода взяла псевдоним-фамилию Ахма́това[12], по второму мужу Ахма́това-Шиле́йко[13], после развода Ахма́това[14]; 11 [23] июня 1889[15][16], Одесса, Херсонская губерния, Российская империя — 5 марта 1966, Домодедово, Московская область, СССР) — русский поэт Серебряного века[~ 1][18][19][20], одна из наиболее значимых фигур русской литературы XX века. Была номинирована на Нобелевскую премию по литературе (1965[21] и 1966[22]).</p>
+                        <p>Ставшая классиком русской поэзии, Ахматова подвергалась замалчиванию, цензуре и преследованиям (постановление ЦК ВКП(б) 1946 года не было отменено при её жизни), многие произведения не были опубликованы на родине не только при жизни автора, но и более двух десятилетий после её смерти. В то же время имя Ахматовой ещё при жизни окружала слава среди почитателей поэзии как в СССР, так и в эмиграции.</p>
+                        <p>Одно из наиболее значительных произведений Ахматовой — поэма «Реквием», в которой отражено горе жён и матерей «врагов народа». Первые две главы поэмы были написаны в 1934—1935 годах, 3—7-я главы опубликованы в 1936—1943 годах, остальные — дорабатывались на протяжении будущих двадцати лет, когда саму Ахматову исключили из Союза писателей СССР. Сама поэма долгое время не публиковалась, выходила в самиздате, в свет она вышла в середине 1980-х.</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
 </main>
-
-<!--Start footer-->
 
 <footer class="blog-footer">
     <div class="container">
@@ -108,10 +203,10 @@
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="/static/jquery-3.6.1.min.js"></script>
+<script src="./static/jquery-3.6.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="/static/bootstrap/bootstrap.min.js"></script>
-<script src="/static/bootstrap/bootstrap.bundle.js"></script>
-<script src="/static/js/main.js"></script>
+<script src="./static/bootstrap/bootstrap.min.js"></script>
+<script src="./static/bootstrap/bootstrap.bundle.js"></script>
+<script src="./static/js/main.js"></script>
 </body>
 </html>
