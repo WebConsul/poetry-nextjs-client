@@ -1,5 +1,6 @@
 @import "index";
 @import "poet";
+@import "verse";
 @font-face {
   font-family: 'Boncegro';
   src: url(../fonts/Boncegro-FF-4F.otf);
@@ -125,6 +126,10 @@ small{
 .h-250 { height: 250px; }
 @media (min-width: 768px) {
   .h-md-250 { height: 250px; }
+}
+
+button{
+  font-family: 'Leto-Text-Sans-Defect';
 }
 
 /*

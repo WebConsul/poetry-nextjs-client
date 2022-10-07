@@ -63,6 +63,35 @@
   height: 100%;
 }
 
+.main-container .number-unit {
+  border-radius: 50%;
+  padding: 3px 7px;
+  color: #fff;
+  font-size: 0.7em;
+  width: 100%;
+  max-width: 24px;
+}
+.main-container .nav-tabs button {
+  border-color: darkgrey;
+}
+.main-container .count-block {
+  margin: 0 0 0 10px;
+  width: 24px;
+}
+
+.verse-block {
+  font-family: Leto-Text-Sans-Defect, serif;
+}
+.verse-block .verse-string {
+  height: 20px;
+  font-size: larger;
+  margin: 5px 0;
+}
+
+.verse-from {
+  margin-top: 20px;
+}
+
 @font-face {
   font-family: "Boncegro";
   src: url(../fonts/Boncegro-FF-4F.otf);
@@ -194,6 +223,10 @@ small {
     height: 250px;
   }
 }
+button {
+  font-family: "Leto-Text-Sans-Defect";
+}
+
 /*
  * Footer
  */
