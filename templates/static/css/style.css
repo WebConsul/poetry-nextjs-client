@@ -92,6 +92,16 @@
   margin-top: 20px;
 }
 
+.left-book-container .book-block img {
+  width: 100%;
+}
+
+.main-container .book-contents .li-bottom-border li {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
 @font-face {
   font-family: "Boncegro";
   src: url(../fonts/Boncegro-FF-4F.otf);
