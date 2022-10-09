@@ -1,0 +1,22 @@
+.left-book-container{
+  .book-block{
+    img{
+      width: 100%;
+    }
+  }
+}
+
+.main-container{
+  .book-information{
+
+  }
+  .book-contents{
+    .li-bottom-border{
+      li{
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+      }
+    }
+  }
+}
