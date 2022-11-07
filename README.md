@@ -4,7 +4,13 @@
 
 Для запуска приложения требуется **Docker** и **Docker Compose**.
 
-Для инициализации приложения выполнить команду:
+Если в сервисе [Poetry Laravel API](https://github.com/WebConsul/poetry-laravel-api) не была создана общая сеть **poetry**, необходимо выполнить:
+
+```
+make docker-create-network
+```
+
+Затем для инициализации приложения выполнить команду:
 ```
 make init
 ```
