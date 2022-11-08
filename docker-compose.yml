@@ -13,3 +13,7 @@ services:
       context: docker/node
     volumes:
       - ./:/app
+networks:
+  default:
+    name: poetry
+    external: true
